@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="807143D4-ECFB-1979-2BD1-0E098A44E772" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="STUDENT_SEMESTER">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>STUDENT_SEMESTER</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDENTID" id="2C2BC668-81BE-1431-2E25-431C1FDAAE43">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>STUDENT_SEMESTER</sourceObjSchema>
+<sourceObjName>STUDENTID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13BAA8DE-3D66-E98E-962F-5A680BE04E25" referredColumn="5BD258DA-E67D-3A45-478D-68015367E615"/>
+</associations>
+</Column>
+<Column name="SEMESTERID" id="D5E2E311-B02D-2674-B5AF-7E547C56FCEA">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>STUDENT_SEMESTER</sourceObjSchema>
+<sourceObjName>SEMESTERID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C06E2D6-D9D7-BA0B-3FCA-535EA4292F96" referredColumn="AA109107-FB38-F3BD-32C9-E4DA34069A31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1386F98-EDED-ABAE-2DD1-F0FE74CAF208" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="STUDENT_SEMESTER_PK">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008729</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C2BC668-81BE-1431-2E25-431C1FDAAE43"/>
+<colUsage columnID="D5E2E311-B02D-2674-B5AF-7E547C56FCEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="252A9B0C-3789-C11E-B312-7F160781A485" name="SYS_C008730">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C2BC668-81BE-1431-2E25-431C1FDAAE43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56F954E9-494B-FF1F-7B00-3E3BFE567922" name="SYS_C008731">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5E2E311-B02D-2674-B5AF-7E547C56FCEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="MASTER" directorySegmentName="seg_0" id="1A3798E1-292D-C683-7C43-79551636EDEA">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B7DFA6FB-7013-A215-B6DA-57CA442BB895</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FACULTYID" id="69641942-82BE-E7F0-86AB-7F6D34D2E086">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEMESTERID" id="724BF845-1071-025C-F9D9-4F2793C54380">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COURSEID" id="A97481CD-5D27-F1E3-482B-6814193E7432">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENROLLMENTID" id="E7BFB864-F97A-F8BD-A3C8-563CD88BC4DD">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STUDENTID" id="FE957C93-682E-9700-5B8F-FA52C8EAAB95">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008738" id="37A5A9FC-5559-F407-B63F-18AB9E5D3B75">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008737" id="A3F07F25-3A4D-2288-BDA7-94DD363E9C3E">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008739" id="D16B7D9A-9E7E-98F2-674E-6D0A6474E914">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008740" id="EADA96F4-0FFB-9FA8-0299-F1F45D98F2B4">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MASTER_PK" id="81C5DA63-C16A-4400-FFC2-228E15150327">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<segment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<indexSegment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

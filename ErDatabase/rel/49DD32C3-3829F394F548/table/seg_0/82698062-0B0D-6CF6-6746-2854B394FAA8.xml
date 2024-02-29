@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="82698062-0B0D-6CF6-6746-2854B394FAA8" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="COURSES">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>COURSES</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COURSEID" id="60E62CF8-A7B0-F4F3-3989-499CF74BCDFA">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>COURSES</sourceObjSchema>
+<sourceObjName>COURSEID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COURSENAME" id="D3E13210-C270-C2D0-EE44-99DEA1AEA681">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>COURSES</sourceObjSchema>
+<sourceObjName>COURSENAME</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008666</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(CourseName, &apos;^[a-zA-Z0-9 ]+$&apos;)"/>
+<implementationDef dbType="Oracle Database 21c" definition="REGEXP_LIKE(CourseName, &apos;^[a-zA-Z0-9 ]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NO_OF_LECTURES" id="BF192FC9-8A89-791B-593C-834DE219DC05">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>COURSES</sourceObjSchema>
+<sourceObjName>NO_OF_LECTURES</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008667</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="No_of_Lectures &gt;= 0 AND No_of_Lectures &lt;=2"/>
+<implementationDef dbType="Oracle Database 21c" definition="No_of_Lectures &gt;= 0 AND No_of_Lectures &lt;=2"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT_HOUR" id="B898C695-9653-E06A-232C-EB276119306D">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>COURSES</sourceObjSchema>
+<sourceObjName>COUNT_HOUR</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008668</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="count_hour &gt;0 AND count_hour &lt;=2"/>
+<implementationDef dbType="Oracle Database 21c" definition="count_hour &gt;0 AND count_hour &lt;=2"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32E94249-BA44-5AAB-4A4C-95FCD1B13820" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="COURSES_PK">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008669</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60E62CF8-A7B0-F4F3-3989-499CF74BCDFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

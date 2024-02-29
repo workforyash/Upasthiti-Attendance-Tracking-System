@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9C68B2E-D1A0-6FAD-768F-708FBCCB3193" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="TIMETABLE">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>TIMETABLE</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COURSEID" id="12B7103D-6653-4E77-E059-630FAA481FE0">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>TIMETABLE</sourceObjSchema>
+<sourceObjName>COURSEID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="574F7859-9B7C-3475-5518-1226810C9689" referredColumn="60E62CF8-A7B0-F4F3-3989-499CF74BCDFA"/>
+</associations>
+</Column>
+<Column name="SEMESTERID" id="28369054-F2BD-308C-E790-DE8084560F59">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>TIMETABLE</sourceObjSchema>
+<sourceObjName>SEMESTERID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A9D8847-2E01-F0C0-8833-8D459E323FA8" referredColumn="AA109107-FB38-F3BD-32C9-E4DA34069A31"/>
+</associations>
+</Column>
+<Column name="START_TIME" id="22B5761E-73A7-B87F-4010-00B9C1F49175">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>TIMETABLE</sourceObjSchema>
+<sourceObjName>START_TIME</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_TIME" id="8A9AAB84-E133-4016-5127-650E73B3377A">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>TIMETABLE</sourceObjSchema>
+<sourceObjName>END_TIME</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY" id="CA8A296D-2A4B-78C1-9230-8D34E4DD6B22">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>TIMETABLE</sourceObjSchema>
+<sourceObjName>DAY</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008679</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Friday&apos;" description=""/>
+<valueDef value="&apos;Monday&apos;" description=""/>
+<valueDef value="&apos;Saturday&apos;" description=""/>
+<valueDef value="&apos;Thursday&apos;" description=""/>
+<valueDef value="&apos;Tuesday&apos;" description=""/>
+<valueDef value="&apos;Wednesday&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="784D1377-A172-5CC3-4396-AC6293786F39" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="TIMETABLE_PK">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008681</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12B7103D-6653-4E77-E059-630FAA481FE0"/>
+<colUsage columnID="28369054-F2BD-308C-E790-DE8084560F59"/>
+<colUsage columnID="CA8A296D-2A4B-78C1-9230-8D34E4DD6B22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F40F565-B770-B1F4-C873-B3B9285DE474" name="SYS_C008682">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12B7103D-6653-4E77-E059-630FAA481FE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3F760BD-0693-DD05-CCB9-8E5F699E6130" name="SYS_C008683">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28369054-F2BD-308C-E790-DE8084560F59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="SYS_C008680" directorySegmentName="seg_0" id="B6B81AE0-41C4-AB37-295B-6A51188FB16B">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008680</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<rule><![CDATA[Start_Time < End_Time]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

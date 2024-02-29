@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="COURSES" directorySegmentName="seg_0" id="82698062-0B0D-6CF6-6746-2854B394FAA8">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B7DFA6FB-7013-A215-B6DA-57CA442BB895</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COURSEID" id="60E62CF8-A7B0-F4F3-3989-499CF74BCDFA">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNT_HOUR" id="B898C695-9653-E06A-232C-EB276119306D">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO_OF_LECTURES" id="BF192FC9-8A89-791B-593C-834DE219DC05">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COURSENAME" id="D3E13210-C270-C2D0-EE44-99DEA1AEA681">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COURSES_PK" id="32E94249-BA44-5AAB-4A4C-95FCD1B13820">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<segment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<indexSegment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

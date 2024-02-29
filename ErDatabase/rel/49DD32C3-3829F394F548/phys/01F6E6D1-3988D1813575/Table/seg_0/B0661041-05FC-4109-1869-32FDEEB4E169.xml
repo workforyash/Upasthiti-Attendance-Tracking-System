@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="STUDENT_PARENT" directorySegmentName="seg_0" id="B0661041-05FC-4109-1869-32FDEEB4E169">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B7DFA6FB-7013-A215-B6DA-57CA442BB895</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PARENTID" id="8C82D83F-F9B8-C3A1-4872-5BC6D49E14A1">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STUDENTID" id="A72B9FFC-51E7-E130-8179-5B9A40DEAB32">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008745" id="530B68F9-5FEF-5677-C63D-DF502C0B6AB4">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008744" id="889DB50E-3CE1-C9C0-30B0-B3C83FBDAB41">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STUDENT_PARENT_PK" id="AEB1AF66-03AB-D918-63D2-4CE94DB34C6F">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<segment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<indexSegment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

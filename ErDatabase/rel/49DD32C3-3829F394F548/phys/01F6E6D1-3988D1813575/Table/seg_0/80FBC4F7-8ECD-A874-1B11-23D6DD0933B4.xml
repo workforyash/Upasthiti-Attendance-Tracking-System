@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="STUDENTS" directorySegmentName="seg_0" id="80FBC4F7-8ECD-A874-1B11-23D6DD0933B4">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B7DFA6FB-7013-A215-B6DA-57CA442BB895</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="GMAIL" id="49CD81B2-53CD-24BD-A4D4-4724EE72639C">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="4F40D861-5D56-CFDC-0963-9D3F8BE77C2E">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STUDENTNAME" id="566CA674-21B7-54D8-4DBC-82FC4F5B8640">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STUDENTID" id="5BD258DA-E67D-3A45-478D-68015367E615">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONENO" id="E4504CE4-29EF-B87B-3A5C-5A73F5EB304E">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STUDENTS_PK" id="3B07A846-672C-F1BF-1D6F-2693D876E651">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<segment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<indexSegment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="SYS_C008650" id="1D986CA6-154A-E5BD-9728-18F4623FC210">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="STUDENTS_PHONENO_UN" id="6ADF8349-8F11-9910-173B-0B45162FA7AA">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<segment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<indexSegment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="STUDENTS_GMAIL_UN" id="D8A71A47-98C2-DBAC-B666-8853C3DDE734">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<segment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<indexSegment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

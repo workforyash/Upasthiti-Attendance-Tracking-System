@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SEMESTERS" directorySegmentName="seg_0" id="8A3AF1AB-D05A-279E-7002-2A002933859D">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B7DFA6FB-7013-A215-B6DA-57CA442BB895</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="START_DATE" id="6B2675E6-1DFC-ADF2-F117-B086DAA17253">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_DATE" id="A2384738-DB2B-455C-F246-650D0EBDFCFB">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEMESTERNAME" id="A92D3FC2-D896-FB82-7EF5-CC2854DC9A38">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEMESTERID" id="AA109107-FB38-F3BD-32C9-E4DA34069A31">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SEMESTERS_PK" id="055CA389-246E-1F42-FCA3-31D348B338E8">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+<segment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</segment>
+<tableSpace>88EEE7F4-0BA5-507B-A83A-FDAE42980F23</tableSpace>
+<indexSegment>5F47E6D7-B206-600A-8D18-62703E9F8E1F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CHK_VALID_SEMESTER_DATES" id="163CA1B3-F42B-9C4D-3ADA-3DF0703D5D55">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev20c>

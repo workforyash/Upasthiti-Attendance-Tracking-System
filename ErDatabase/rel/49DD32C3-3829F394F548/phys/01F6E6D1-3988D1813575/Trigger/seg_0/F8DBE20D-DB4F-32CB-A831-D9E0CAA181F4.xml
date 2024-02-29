@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="CHECKINTRIGGER" directorySegmentName="seg_0" id="F8DBE20D-DB4F-32CB-A831-D9E0CAA181F4">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>CHECKINTRIGGER</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+  vCount NUMBER;
+BEGIN
+  IF :NEW.Status = 'Scheduled' THEN
+    SELECT COUNT(*)
+    INTO vCount
+    FROM Timetable
+    WHERE CourseID = :NEW.CourseID
+      AND Start_Time <= CURRENT_TIMESTAMP
+      AND End_Time > CURRENT_TIMESTAMP
+      AND Day = TO_CHAR(CURRENT_TIMESTAMP, 'Dy');
+
+    IF vCount > 0 THEN
+      :NEW.Status := 'Present';
+      :NEW.Timestamp_S := CURRENT_TIMESTAMP;
+    END IF;
+  END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>A07FFB82-1B7C-4EDE-76FF-036485909AA3</owner>
+<table>84568F6E-C485-0709-017D-32B14813B8E1</table>
+</TriggerOraclev10g>

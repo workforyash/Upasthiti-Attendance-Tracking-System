@@ -1,0 +1,43 @@
+1. Faculty
+CREATE TABLE Faculty (
+    FacultyID NUMBER(10) PRIMARY KEY,
+    FacultyName VARCHAR2(100) NOT NULL CHECK (REGEXP_LIKE(FacultyName, '^[a-zA-Z ]+$')),
+    PhoneNo VARCHAR2(20) NOT NULL UNIQUE CHECK (REGEXP_LIKE(PhoneNo, '^[0-9]{10}$')),
+    Gmail VARCHAR2(255) NOT NULL UNIQUE CHECK (REGEXP_LIKE(Gmail, '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')),
+    Password VARCHAR2(64) NOT NULL CHECK (LENGTH(Password) >= 8 AND REGEXP_LIKE(Password, '^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$')),
+    CONSTRAINT chk_valid_gmail_domain CHECK (REGEXP_LIKE(SUBSTR(Gmail, INSTR(Gmail, '@') + 1), '^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'))
+);
+
+
+Faculty Table
+FacultyID:
+
+Datatype: NUMBER(10)
+Constraint: Primary Key
+Explanation: This field serves as the unique identifier for each faculty member. It's of numeric type with a maximum length of 10 digits and is designated as the primary key for the table, ensuring that each FacultyID is unique.
+FacultyName:
+
+Datatype: VARCHAR2(100)
+Constraint: NOT NULL, CHECK (REGEXP_LIKE(FacultyName, '^[a-zA-Z ]+$'))
+Explanation: This field stores the name of the faculty member. The VARCHAR2(100) datatype allows for variable-length character strings up to 100 characters. The NOT NULL constraint ensures that this field cannot be empty. The CHECK constraint using REGEXP_LIKE ensures that only letters and spaces are allowed in the name.
+PhoneNo:
+
+Datatype: VARCHAR2(20)
+Constraint: NOT NULL, UNIQUE, CHECK (REGEXP_LIKE(PhoneNo, '^[0-9]{10}$'))
+Explanation: This field stores the phone number of the faculty member. The VARCHAR2(20) datatype allows for variable-length character strings up to 20 characters. The NOT NULL constraint ensures that this field cannot be empty. The UNIQUE constraint ensures that each phone number is unique. The CHECK constraint using REGEXP_LIKE ensures that the phone number consists of exactly 10 digits.
+Gmail:
+
+Datatype: VARCHAR2(255)
+Constraint: NOT NULL, UNIQUE, CHECK (REGEXP_LIKE(Gmail, '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$'))
+Explanation: This field stores the Gmail address of the faculty member. The VARCHAR2(255) datatype allows for variable-length character strings up to 255 characters. The NOT NULL constraint ensures that this field cannot be empty. The UNIQUE constraint ensures that each Gmail address is unique. The CHECK constraint using REGEXP_LIKE ensures that the Gmail address follows a valid email pattern.
+Password:
+
+Datatype: VARCHAR2(64)
+Constraint: NOT NULL, CHECK (LENGTH(Password) >= 8 AND REGEXP_LIKE(Password, '^(?=.[a-z])(?=.[A-Z])(?=.\d).$'))
+Explanation: This field stores the password of the faculty member. The VARCHAR2(64) datatype allows for variable-length character strings up to 64 characters. The NOT NULL constraint ensures that this field cannot be empty. The CHECK constraint ensures that the password is at least 8 characters long and includes at least one lowercase letter, one uppercase letter, and one digit.
+chk_valid_gmail_domain:
+
+Constraint: CHECK (REGEXP_LIKE(SUBSTR(Gmail, INSTR(Gmail, '@') + 1), '^[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$'))
+Explanation: This is an additional CHECK constraint that ensures the domain part of the Gmail address follows a valid pattern. It checks if the substring after the '@' symbol in the Gmail address matches a specific domain pattern.
+
+Address Constraint: Checks that the length of the address is less than or equal to 255 characters and enforces a pattern allowing alphanumeric characters, spaces, commas, periods, and hyphens.

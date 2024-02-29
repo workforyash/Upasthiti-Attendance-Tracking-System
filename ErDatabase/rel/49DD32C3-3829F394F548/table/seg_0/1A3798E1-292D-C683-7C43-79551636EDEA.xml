@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A3798E1-292D-C683-7C43-79551636EDEA" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="MASTER">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>MASTER</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENROLLMENTID" id="E7BFB864-F97A-F8BD-A3C8-563CD88BC4DD">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>MASTER</sourceObjSchema>
+<sourceObjName>ENROLLMENTID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STUDENTID" id="FE957C93-682E-9700-5B8F-FA52C8EAAB95">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>MASTER</sourceObjSchema>
+<sourceObjName>STUDENTID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DA841DF-208C-5C26-8F0C-106B161B4091" referredColumn="5BD258DA-E67D-3A45-478D-68015367E615"/>
+</associations>
+</Column>
+<Column name="COURSEID" id="A97481CD-5D27-F1E3-482B-6814193E7432">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>MASTER</sourceObjSchema>
+<sourceObjName>COURSEID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F82982A8-B136-CF90-F3F3-F61D93F1BA2D" referredColumn="60E62CF8-A7B0-F4F3-3989-499CF74BCDFA"/>
+</associations>
+</Column>
+<Column name="FACULTYID" id="69641942-82BE-E7F0-86AB-7F6D34D2E086">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>MASTER</sourceObjSchema>
+<sourceObjName>FACULTYID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6436CDC-5FB5-C1DB-0543-2DDADDCA98A0" referredColumn="52ED9041-7C21-0E7F-5E5C-9D8DD90DA15F"/>
+</associations>
+</Column>
+<Column name="SEMESTERID" id="724BF845-1071-025C-F9D9-4F2793C54380">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>MASTER</sourceObjSchema>
+<sourceObjName>SEMESTERID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B514BAB1-CFA6-ECC7-0829-5A531D9A9EBC" referredColumn="AA109107-FB38-F3BD-32C9-E4DA34069A31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="81C5DA63-C16A-4400-FFC2-228E15150327" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="MASTER_PK">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008736</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7BFB864-F97A-F8BD-A3C8-563CD88BC4DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3F07F25-3A4D-2288-BDA7-94DD363E9C3E" name="SYS_C008737">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE957C93-682E-9700-5B8F-FA52C8EAAB95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37A5A9FC-5559-F407-B63F-18AB9E5D3B75" name="SYS_C008738">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A97481CD-5D27-F1E3-482B-6814193E7432"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D16B7D9A-9E7E-98F2-674E-6D0A6474E914" name="SYS_C008739">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69641942-82BE-E7F0-86AB-7F6D34D2E086"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EADA96F4-0FFB-9FA8-0299-F1F45D98F2B4" name="SYS_C008740">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="724BF845-1071-025C-F9D9-4F2793C54380"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

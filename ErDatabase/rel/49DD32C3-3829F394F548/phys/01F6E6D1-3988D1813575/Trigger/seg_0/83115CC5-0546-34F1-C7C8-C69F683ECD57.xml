@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="CHECKOUTTRIGGER" directorySegmentName="seg_0" id="83115CC5-0546-34F1-C7C8-C69F683ECD57">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>CHECKOUTTRIGGER</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[DECLARE
+  vEndTime TIMESTAMP;
+BEGIN
+  IF :NEW.Status = 'Present' THEN
+    SELECT End_Time
+    INTO vEndTime
+    FROM Timetable
+    WHERE CourseID = :NEW.CourseID
+      AND Day = TO_CHAR(CURRENT_TIMESTAMP, 'Dy');
+
+    IF :NEW.Timestamp_E IS NULL AND CURRENT_TIMESTAMP > vEndTime THEN
+      :NEW.Timestamp_E := CURRENT_TIMESTAMP;
+    END IF;
+  END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>A07FFB82-1B7C-4EDE-76FF-036485909AA3</owner>
+<table>84568F6E-C485-0709-017D-32B14813B8E1</table>
+</TriggerOraclev10g>

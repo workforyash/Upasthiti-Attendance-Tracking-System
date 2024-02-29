@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80FBC4F7-8ECD-A874-1B11-23D6DD0933B4" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="STUDENTS">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>STUDENTS</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDENTID" id="5BD258DA-E67D-3A45-478D-68015367E615">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>STUDENTS</sourceObjSchema>
+<sourceObjName>STUDENTID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STUDENTNAME" id="566CA674-21B7-54D8-4DBC-82FC4F5B8640">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>STUDENTS</sourceObjSchema>
+<sourceObjName>STUDENTNAME</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008648</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(StudentName, &apos;^[a-zA-Z ]+$&apos;)"/>
+<implementationDef dbType="Oracle Database 21c" definition="REGEXP_LIKE(StudentName, &apos;^[a-zA-Z ]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONENO" id="E4504CE4-29EF-B87B-3A5C-5A73F5EB304E">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>STUDENTS</sourceObjSchema>
+<sourceObjName>PHONENO</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008649</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(PhoneNo, &apos;^[0-9]{10}$&apos;)"/>
+<implementationDef dbType="Oracle Database 21c" definition="REGEXP_LIKE(PhoneNo, &apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GMAIL" id="49CD81B2-53CD-24BD-A4D4-4724EE72639C">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>STUDENTS</sourceObjSchema>
+<sourceObjName>GMAIL</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>CHK_VALID_GMAIL_STUDENT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(SUBSTR(Gmail, INSTR(Gmail, &apos;@&apos;) + 1), &apos;^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$&apos;)"/>
+<implementationDef dbType="Oracle Database 21c" definition="REGEXP_LIKE(SUBSTR(Gmail, INSTR(Gmail, &apos;@&apos;) + 1), &apos;^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="4F40D861-5D56-CFDC-0963-9D3F8BE77C2E">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>STUDENTS</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008651</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(Address) &lt;= 255 AND REGEXP_LIKE(Address, &apos;^[a-zA-Z0-9.,\- ]+$&apos;)"/>
+<implementationDef dbType="Oracle Database 21c" definition="LENGTH(Address) &lt;= 255 AND REGEXP_LIKE(Address, &apos;^[a-zA-Z0-9.,\- ]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B07A846-672C-F1BF-1D6F-2693D876E651" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="STUDENTS_PK">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008653</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BD258DA-E67D-3A45-478D-68015367E615"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6ADF8349-8F11-9910-173B-0B45162FA7AA" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="STUDENTS_PHONENO_UN">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008654</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4504CE4-29EF-B87B-3A5C-5A73F5EB304E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8A71A47-98C2-DBAC-B666-8853C3DDE734" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="STUDENTS_GMAIL_UN">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008655</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:53 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49CD81B2-53CD-24BD-A4D4-4724EE72639C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="SYS_C008650" directorySegmentName="seg_0" id="1D986CA6-154A-E5BD-9728-18F4623FC210">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>SYS_C008650</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<rule><![CDATA[REGEXP_LIKE(Gmail, '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

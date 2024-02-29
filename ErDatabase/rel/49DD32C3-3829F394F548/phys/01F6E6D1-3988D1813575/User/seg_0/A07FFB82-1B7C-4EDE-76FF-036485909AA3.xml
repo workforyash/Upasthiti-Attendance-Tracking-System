@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="UPSATHITI" directorySegmentName="seg_0" id="A07FFB82-1B7C-4EDE-76FF-036485909AA3">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjName>UPSATHITI</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<schemaObject>6C42DF51-FA00-09A8-4746-8EBAF922E21E</schemaObject>
+</UserOraclev10g>

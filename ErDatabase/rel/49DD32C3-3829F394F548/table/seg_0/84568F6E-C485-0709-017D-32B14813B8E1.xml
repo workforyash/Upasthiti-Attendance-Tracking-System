@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84568F6E-C485-0709-017D-32B14813B8E1" schemaObject="6C42DF51-FA00-09A8-4746-8EBAF922E21E" name="ATTENDANCE">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>UPSATHITI</sourceObjSchema>
+<sourceObjName>ATTENDANCE</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:51 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ATTENDEDDATE" id="3E72531A-52D1-4D20-F323-15BCF7A4C763">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>ATTENDANCE</sourceObjSchema>
+<sourceObjName>ATTENDEDDATE</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIMESTAMP_S" id="BA617445-5148-B15C-106C-831204863782">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>ATTENDANCE</sourceObjSchema>
+<sourceObjName>TIMESTAMP_S</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIMESTAMP_E" id="6AD9E62F-BC43-C3DB-B62B-D95156F6936D">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>ATTENDANCE</sourceObjSchema>
+<sourceObjName>TIMESTAMP_E</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="2B02FD31-0339-CDB8-B1C6-81650E290657">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>ATTENDANCE</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<constraintName>SYS_C008693</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Absent&apos;" description=""/>
+<valueDef value="&apos;Excused&apos;" description=""/>
+<valueDef value="&apos;Late&apos;" description=""/>
+<valueDef value="&apos;Present&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COURSEID" id="0104CFD8-1B76-067B-F3FE-AEB453220973">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>ATTENDANCE</sourceObjSchema>
+<sourceObjName>COURSEID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C723FEE-8A63-B892-7AA3-507B11356C73" referredColumn="60E62CF8-A7B0-F4F3-3989-499CF74BCDFA"/>
+</associations>
+</Column>
+<Column name="STUDENTID" id="29FF7F31-43F9-721F-79DD-889E6BC914CF">
+<sourceConnName>upsathiti</sourceConnName>
+<sourceObjSchema>ATTENDANCE</sourceObjSchema>
+<sourceObjName>STUDENTID</sourceObjName>
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:52 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DF22EC3-1862-5AF9-8537-A6B5D2305749" referredColumn="5BD258DA-E67D-3A45-478D-68015367E615"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDD28534-0FAE-5A81-BA33-311332F936F3" name="SYS_C008694">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0104CFD8-1B76-067B-F3FE-AEB453220973"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9842ED04-6D21-C001-5FFE-126C1BD160A2" name="SYS_C008695">
+<createdBy>DeLL</createdBy>
+<createdTime>2024-02-29 12:20:54 UTC</createdTime>
+<ownerDesignName>ErDatabase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29FF7F31-43F9-721F-79DD-889E6BC914CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
